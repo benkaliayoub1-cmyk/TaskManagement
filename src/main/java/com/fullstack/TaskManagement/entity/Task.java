@@ -7,9 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.util.Date;
 
-@NoArgsConstructor
+@NoArgsConstructor // to create Consturctor without writing it down
 @AllArgsConstructor
-@Data
+@Data // to create Getters and Setters without writing them down
 @Entity
 public class Task {
     @Id
