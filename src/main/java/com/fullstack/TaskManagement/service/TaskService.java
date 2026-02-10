@@ -13,7 +13,7 @@ import java.util.Optional;
 public class TaskService {
     private TaskRepository taskRepository;
 
-    public List<Task> getTasks(){return taskRepository.findAll();}
+    public List<Task> getTasks(){return taskRepository.getAllTaskByDueDate();}
     public Optional <Task> getTaskById(Long Id) {return taskRepository.findById(Id);}
     public Task addtask(Task task) {
         return taskRepository.save(task);

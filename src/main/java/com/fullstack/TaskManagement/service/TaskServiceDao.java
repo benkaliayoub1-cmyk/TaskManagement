@@ -1,10 +1,10 @@
 package com.fullstack.TaskManagement.service;
 
 
+
 import com.fullstack.TaskManagement.entity.Task;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 
 @AllArgsConstructor
-@Data
 @Service
 public class TaskServiceDao {
     private TaskService taskService;

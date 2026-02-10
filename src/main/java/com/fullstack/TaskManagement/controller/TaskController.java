@@ -1,6 +1,7 @@
 package com.fullstack.TaskManagement.controller;
 
 
+
 import com.fullstack.TaskManagement.entity.Task;
 import com.fullstack.TaskManagement.service.TaskServiceDao;
 import lombok.AllArgsConstructor;
@@ -17,6 +18,7 @@ public class TaskController {
       private TaskServiceDao dao;
 
 
+
     @GetMapping("/task")
     public List<Task> getTasks() {  return dao.getTasks();}
 
@@ -24,6 +26,7 @@ public class TaskController {
     public Optional<?> getTask(@PathVariable Long id) {
         return dao.getTask(id);
     }
+
     @PostMapping("/task")
     public Task addTask(@RequestBody Task task) {
         return dao.addtask(task);
